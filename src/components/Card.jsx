@@ -1,64 +1,76 @@
 import React from "react";
 import sprite from "../images/sprites.svg";
-import img from "../images/mobile/Rectangle 48648.png";
-import styles from "./cart.module.css";
+import s from "./cart.module.css";
+import imageData from "../datа.json"; // Шлях до вашого файлу з даними
+
+// src = "/static/media/Rectangle 48555.c22664792d143321b182.png";
+
 const Card = ({ item }) => {
   return (
     <div>
-      <div className={styles.imgWrap}>
-        <img className={styles.img} src={img} alt="fgfd" />
-      </div>
-      <div className={styles.contentWrap}>
-        <h2>Azure Heights Luxury Residences</h2>
-        <button style={{ background: "#fff" }}>
-          <svg
-            width={30}
-            height={30}
-            style={{ fill: "transparent", stroke: "#232323" }}
-          >
-            <use href={`${sprite}#icon-arrow`}></use>
-          </svg>
-        </button>
-        <button>
-          <svg
-            width={30}
-            height={30}
-            style={{ fill: "transparent", stroke: "#232323" }}
-          >
-            <use href={`${sprite}#icon-mark`}></use>
-          </svg>
-          Dubai Marina
-        </button>
-        <ul>
-          <li>
-            <p>Price </p>
-            <span> from $290k</span>
-          </li>
-          <li>
-            <p>Installment Plan </p>
-            <span>from $290k</span>
-          </li>
-          <li>
-            <p>Initial Payment </p>
-            <span> $30,000</span>
-          </li>
-          <li>
-            <p>Upgraded Features</p>
-            <span>
-              <svg width={30} height={30}>
-                <use href={`${sprite}#icon-roller`}></use>
+      {imageData.map((imageItem) => (
+        <div className={s.cardThumb} key={imageItem.id}>
+          <div className={s.imgWrap}>
+            <img src={imageItem.image} alt={imageItem.title} />
+          </div>
+          <div className={s.contentWrap}>
+            <h2 className={s.Card__imageItemTitle}>{imageItem.title}</h2>
+            <button className={s.Card__BtnToMap}>
+              <svg
+                width={30}
+                height={30}
+                style={{ fill: "transparent", stroke: "#232323" }}
+              >
+                <use href={`${sprite}#icon-arrow`}></use>
               </svg>
-              <svg width={30} height={30}>
-                <use href={`${sprite}#icon-chair`}></use>
+            </button>
+            <button className={s.Card__locationBtn}>
+              <svg
+                width={30}
+                height={30}
+                style={{ fill: "transparent", stroke: "#232323" }}
+              >
+                <use href={`${sprite}#icon-mark`}></use>
               </svg>
-            </span>
-          </li>
-          <li>
-            <p>Completion Date </p>
-            <span> 09/2025</span>
-          </li>
-        </ul>
-      </div>
+              {imageItem.location}
+            </button>
+            <ul className={s.Card__itemList}>
+              <li className={s.Card__itemTag}>
+                <p className={s.Card__itemTagTitle}>Price </p>
+                <span className={s.Card__itemTagValue}>{imageItem.price}</span>
+              </li>
+              <li className={s.Card__itemTag}>
+                <p className={s.Card__itemTagTitle}>Installment Plan </p>
+                <span className={s.Card__itemTagValue}>
+                  {imageItem.installmentPlan}
+                </span>
+              </li>
+              <li className={s.Card__itemTag}>
+                <p className={s.Card__itemTagTitle}>Initial Payment </p>
+                <span className={s.Card__itemTagValue}>
+                  {imageItem.initialPayment}
+                </span>
+              </li>
+              <li className={s.Card__itemTag}>
+                <p className={s.Card__itemTagTitle}>Upgraded Features</p>
+                <span className={s.Card__itemTagValue}>
+                  {imageItem.upgradedFeatures.map((feature, index) => (
+                    <svg key={index} width={30} height={30}>
+                      <use href={`${sprite}#icon-${feature}`}></use>
+                    </svg>
+                  ))}
+                </span>
+              </li>
+              <li>
+                <p className={s.Card__itemTagTitle}>Completion Date </p>
+                <span className={s.Card__itemTagValue}>
+                  {imageItem.completionDate}
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

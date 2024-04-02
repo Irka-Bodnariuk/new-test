@@ -1,4 +1,5 @@
 import "./App.css";
+import Card from "./components/Card";
 
 import List from "./components/List";
 
@@ -19,8 +20,8 @@ function App() {
           <button>For Rent</button>
         </li>
       </ul>
-
-      <List />
+      <Card />
+      {/* <List /> */}
       <button>All Properties</button>
       <p>Don't Miss Out on Hot Deals! Follow Us on Social Media</p>
       <button>

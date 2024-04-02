@@ -5,7 +5,7 @@ import data from "../datа.json";
 
 const List = () => {
   return (
-    <div>
+    <div key={data.id}>
       {data?.map((item) => (
         <Card rey={item.id} item={item} />
       ))}

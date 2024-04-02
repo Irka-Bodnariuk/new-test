@@ -4,6 +4,8 @@
 .imgWrap {
   width: 353px;
   height: 418px;
+  margin-bottom: 20px;
+  display: -webkit-box;
 }
 .img {
   width: 100%;
@@ -12,6 +14,62 @@
 }
 .contentWrap {
   position: absolute;
-  z-index: 1;
+  /* z-index: 1; */
   top: 0;
+  height: 100%;
+  /* width: 100%; */
+}
+.Card__imageItemTitle{
+font-family: "Neue Montreal", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #fff;
+}
+
+.cardThumb{
+  position: relative;
+}
+.cardThumb:hover .Card__itemList {
+  display: flex;
+  /* Зміна на дисплей флекс при ховері на .cardThumb */
+}
+
+.Card__itemList{
+  display: none;
+  margin: 0px 12px;
+}
+
+.Card__itemTag{
+  border-radius: 10px;
+    width: 95px;
+    height: 56px;
+    background: #fff;
+    margin-left: 8px;
+}
+.Card__itemTagTitle{
+  font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: rgba(46, 47, 48, 0.5);
+}
+.Card__itemTagValue {
+font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #2e2f30;
+}
+
+
+.Card__locationBtn{
+  display: none;
+    @media screen and (min-width: 767px) {
+        display: block;
+      }
+}
+
+.Card__BtnToMap{
+  background-color: #fff;
+    border-radius: 50%;
+    border: none;
 }
