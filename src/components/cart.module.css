@@ -1,0 +1,17 @@
+.section {
+  position: relative;
+}
+.imgWrap {
+  width: 353px;
+  height: 418px;
+}
+.img {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.contentWrap {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
