@@ -4,7 +4,7 @@ import s from "./cart.module.css";
 
 const Card = ({ imageItem }) => {
   return (
-    <div className={s.cardThumb} key={imageItem.id}>
+    <div className={s.cardThumb}>
       <div className={s.imgWrap}>
         <img src={imageItem.image} alt={imageItem.title} />
       </div>
