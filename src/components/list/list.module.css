@@ -10,7 +10,7 @@
   width: 353px;
   height: 418px;
   background-color: #fff;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1440px) {
     border-radius: 30px;
     width: 660px;
     height: 714px;

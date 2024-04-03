@@ -11,16 +11,17 @@ const { REACT_APP_API_KEY } = process.env;
 
 const List = () => {
   const defaultCenter = {
-    lat: 25.081,
-    lng: 55.257,
+    lat: 25.08576,
+    lng: 55.25194,
   };
   const markers = [
-    { lat: 25.081, lng: 55.257 },
-    { lat: 25.0973, lng: 55.3066 },
-    { lat: 25.0975, lng: 55.3068 },
-    { lat: 25.0977, lng: 55.307 },
-    { lat: 25.0979, lng: 55.3072 },
-    { lat: 25.0981, lng: 55.3074 },
+    { lat: 25.085485, lng: 55.179581 },
+    { lat: 25.08051, lng: 55.20018 },
+    { lat: 25.038213, lng: 55.137009 },
+    { lat: 25.023281, lng: 55.213913 },
+    { lat: 25.146414, lng: 55.20636 },
+    { lat: 25.236299, lng: 55.394724 },
+    { lat: 25.324465, lng: 55.358331 },
   ];
 
   const { isLoaded } = useJsApiLoader({

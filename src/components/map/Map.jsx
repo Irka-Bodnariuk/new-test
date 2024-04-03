@@ -9,11 +9,6 @@ const containerStyle = {
   height: "100%",
 };
 
-const defaultCenter = {
-  lat: 25.08576,
-  lng: 55.25194,
-};
-
 const defaultOptions = {
   styles: defaultTheme,
 
@@ -44,14 +39,18 @@ const Map = ({ center, markers }) => {
     <div className={styles.container}>
       <GoogleMap
         mapContainerStyle={containerStyle}
-        center={defaultCenter}
+        center={center}
         zoom={10}
         onLoad={onLoad}
         onUnmount={onUnmount}
         options={defaultOptions}
       >
         {markers.map((marker, index) => (
-          <Marker key={index} position={marker} />
+          <Marker
+            key={index}
+            position={marker}
+            icon={{ url: "./images/mark.svg" }}
+          />
         ))}
       </GoogleMap>
     </div>
