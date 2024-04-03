@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Azure Heights Luxury Residences",
-    "image": "../images/desktop/Rectangle 48555.png",
+    "image": "../images/Rectangle 48623.png",
     "location": "Dubai Marina",
     "price": "from $290k",
     "installmentPlan": "from $290k",
@@ -12,90 +12,46 @@
   },
   {
     "id": 2,
-    "title": "Oceanview Estates",
-    "image": "./images/desktop/Rectangle 48555.png",
-    "location": "Miami Beach",
-    "price": "from $350k",
-    "installmentPlan": "from $350k",
-    "initialPayment": "$35,000",
+    "title": "Azure Heights Luxury Residences",
+    "image": "./images/Rectangle 48624.png",
+    "location": "Dubai Marina",
+    "price": "from $290k",
+    "installmentPlan": "from $290k",
+    "initialPayment": "$30,000",
     "upgradedFeatures": ["roller", "chair"],
-    "completionDate": "10/2024"
+    "completionDate": "09/2025"
   },
   {
     "id": 3,
-    "title": "Mountain Valley Retreat",
-    "image": "./images/desktop/Rectangle 48555.png",
-    "location": "Aspen",
-    "price": "from $500k",
-    "installmentPlan": "from $500k",
-    "initialPayment": "$50,000",
+    "title": "Azure Heights Luxury Residences",
+    "image": "./images/Rectangle 48625.png",
+    "location": "Dubai Marina",
+    "price": "from $290k",
+    "installmentPlan": "from $290k",
+    "initialPayment": "$30,000",
     "upgradedFeatures": ["roller", "chair"],
-    "completionDate": "11/2023"
+    "completionDate": "09/2025"
   },
   {
     "id": 4,
-    "title": "Urban Loft Living",
-    "image": "./images/desktop/Rectangle 48555.png",
-    "location": "New York City",
-    "price": "from $600k",
-    "installmentPlan": "from $600k",
-    "initialPayment": "$60,000",
+    "title": "Azure Heights Luxury Residences",
+    "image": "./images/Rectangle 48626.png",
+    "location": "Dubai Marina",
+    "price": "from $290k",
+    "installmentPlan": "from $290k",
+    "initialPayment": "$30,000",
     "upgradedFeatures": ["roller", "chair"],
-    "completionDate": "12/2022"
+    "completionDate": "09/2025"
   },
   {
     "id": 5,
-    "title": "Lakefront Retreat",
-    "image": "./images/desktop/Rectangle 48555.png",
-    "location": "Lake Tahoe",
-    "price": "from $750k",
-    "installmentPlan": "from $750k",
-    "initialPayment": "$75,000",
+    "title": "Azure Heights Luxury Residences",
+    "image": "./images/Rectangle 48627.png",
+    "location": "Dubai Marina",
+    "price": "from $290k",
+    "installmentPlan": "from $290k",
+    "initialPayment": "$30,000",
     "upgradedFeatures": ["roller", "chair"],
-    "completionDate": "01/2023"
-  },
-  {
-    "id": 6,
-    "title": "Riverside Condos",
-    "image": "./images/desktop/Rectangle 48555.png",
-    "location": "Chicago",
-    "price": "from $400k",
-    "installmentPlan": "from $400k",
-    "initialPayment": "$40,000",
-    "upgradedFeatures": ["roller", "chair"],
-    "completionDate": "02/2024"
-  },
-  {
-    "id": 7,
-    "title": "Downtown Penthouse",
-    "image": "./images/desktop/Rectangle 48555.png",
-    "location": "Los Angeles",
-    "price": "from $900k",
-    "installmentPlan": "from $900k",
-    "initialPayment": "$90,000",
-    "upgradedFeatures": ["roller", "chair"],
-    "completionDate": "03/2025"
-  },
-  {
-    "id": 8,
-    "title": "Beachfront Paradise",
-    "image": "./images/desktop/Rectangle 48555.png",
-    "location": "Malibu",
-    "price": "from $1M",
-    "installmentPlan": "from $1M",
-    "initialPayment": "$100,000",
-    "upgradedFeatures": ["roller", "chair"],
-    "completionDate": "04/2023"
-  },
-  {
-    "id": 9,
-    "title": "Country Club Estates",
-    "image": "./images/desktop/Rectangle 48555.png",
-    "location": "Palm Springs",
-    "price": "from $800k",
-    "installmentPlan": "from $800k",
-    "initialPayment": "$80,000",
-    "upgradedFeatures": ["roller", "chair"],
-    "completionDate": "05/2024"
+    "completionDate": "09/2025"
   }
 ]

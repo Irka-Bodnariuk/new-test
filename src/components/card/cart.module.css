@@ -1,0 +1,114 @@
+.section {
+  position: relative;
+}
+
+.cardThumb {
+  position: relative;
+  display: flex;
+}
+
+.cardThumb:hover .Card__itemList {
+  display: flex;
+}
+
+.imgWrap {
+  width: 353px;
+  height: 418px;
+  margin-bottom: 20px;
+}
+.img {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.contentWrap {
+  position: absolute;
+
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Card__imageItemTitle {
+  font-family: "Neue Montreal", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #fff;
+  margin-right: auto;
+  display: none;
+  max-width: 185px;
+}
+.contentWrap:hover .Card__imageItemTitle {
+  display: block;
+}
+.Card__imageItemTitleBottom {
+  font-family: "Neue Montreal", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #fff;
+  margin-right: auto;
+}
+
+.contentWrap:hover .Card__imageItemTitleBottom {
+  display: none;
+}
+
+.Card__topContentconatiner {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px 15px 0px;
+}
+
+.Card__bottomContentContainer {
+  position: absolute;
+  bottom: 15px;
+}
+
+.Card__itemListThumb {
+  position: absolute;
+  bottom: 15px;
+}
+
+.Card__itemList {
+  display: none;
+  margin: 0px 12px;
+}
+
+.Card__itemTag {
+  border-radius: 10px;
+  width: 95px;
+  height: 56px;
+  background: #fff;
+  margin-left: 8px;
+}
+.Card__itemTagTitle {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  color: rgba(46, 47, 48, 0.5);
+}
+.Card__itemTagValue {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #2e2f30;
+}
+
+/* =====================Btn=============================== */
+.Card__locationBtn {
+  display: none;
+  @media screen and (min-width: 767px) {
+    display: block;
+  }
+}
+
+.Card__BtnArrow {
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  width: 35px;
+  height: 35px;
+}
