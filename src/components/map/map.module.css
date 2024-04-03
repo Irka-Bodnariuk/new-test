@@ -1,15 +1,8 @@
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-}
-
-.wrap {
   border-radius: 16px;
   width: 353px;
   height: 418px;
-  background-color: #fff;
+  overflow: hidden;
   @media screen and (min-width: 767px) {
     border-radius: 30px;
     width: 660px;
